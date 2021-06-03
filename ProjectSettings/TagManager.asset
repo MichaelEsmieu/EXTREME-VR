@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Explosive
+  - Bullet
+  - Hand_R
+  - Button_Show_UI
+  - UI_Button
+  - Button_Trigger_UI
+  - T-shirt
+  - Combinaison
+  - Chaussettes
+  - Chaussures
+  - DosiMActif
+  - DosiMPassif
+  - Gants
+  - Casque
+  - Calot
+  - TriggerRadio
+  - Casquette
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Grabbable
+  - Door
+  - Hand
+  - GrabbableHandler
+  - Menu
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
