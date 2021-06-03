@@ -18,29 +18,21 @@ namespace ExtremeVR
         public GameObject RightArrowImage;
         private bool axisReleased;
         private List<string> scenarioFiles;
-
-        public string testChemin ;
         
         // Start is called before the first frame update
         void Start()
         {
-            
+        
             askPermission() ;
 
             try
             {
-                testChemin = Application.persistentDataPath ;
-
                 //DirectoryInfo dir = new DirectoryInfo("Assets/PFE/Resources/Scenario");
                 //DirectoryInfo dir = new DirectoryInfo("/mnt/sdcard/Scenario");
                 //DirectoryInfo dir = new DirectoryInfo("/storage/emulated/0/Android/data/com.DefaultCompany.PFE/files/Assets/PFE/Resources/Scenario");
                 //DirectoryInfo dir = new DirectoryInfo("/mnt/sdcard/Android/obb/com.DefaultCompany.PFE/Assets/PFE/Resources/Scenario");
-                //DirectoryInfo dir = new DirectoryInfo("D:/PROJET-VR/EXTREME-VR-master/Assets/PFE/Resources/Scenario");
-
 
                 DirectoryInfo dir = new DirectoryInfo("/storage/emulated/0/Android/data/com.DefaultCompany.PFE/files/Scenario");
-                //DirectoryInfo dir = new DirectoryInfo(testChemin);
-                //FileInfo[] info = dir.GetFiles();
 
                 FileInfo[] info = dir.GetFiles("*.txt");
                 scenarioFiles = new List<string>();
@@ -82,9 +74,7 @@ namespace ExtremeVR
             if (Input.GetButtonDown("Fire1"))
             {
                 Debug.Log("Loading...");
-                //mainText.text = "Chargement...";
-
-                mainText.text = testChemin ;
+                mainText.text = "Chargement...";
 
                 //sceneFile = scenarioFiles[selectedIndex];
                 SceneLoader.SceneToLoad = scenarioFiles[selectedIndex];
